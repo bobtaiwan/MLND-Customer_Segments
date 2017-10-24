@@ -22406,10 +22406,10 @@ qcPAJEmSJEkdBiZJkiRJ6jAwSZIkSVLH/wGD21RQbFQ1OQAAAABJRU5ErkJggg==
 <p>The variance in the data explained in total by the first and second principal component is 0.7068.
 The variance in the data explained in total by the first four principal components is 0.9311.</p>
 <p>In terms of customers spending, since PCA deals with the variance of the data and the correlation between features, and based on the visualization provided above.</p>
-<p>The first dimension would represent that we have some customers who spending most less at Detergnets_Paper but spending most at Fresh and Frozen, maybe this dimension could represent traditional market spending.</p>
-<p>The second dimension would represent that we have some customers who spending less at Fresh, Frozen, Delicatessen but spending much more at Detergents_Paper, Grocery, Milk, maybe this dimension could represent grocery store spending.</p>
-<p>The third dimension would represent that we have some customers who spending most at Delicatessen, but spending most less at Fresh, maybe this dimension could represent delicatessen store spending.</p>
-<p>The fourth dimension would represent that we have some customers who spending most at Frozen, but spending most less at Delicatessen, maybe this dimension could represent frozen food store spending .</p>
+<p>The first dimension would represent that we have some customers who purchase a lot of Detergnets_Paper, Milk, Grocery while other customers purchase very few amounts of Detergnets_Paper, Milk, and Grocery, maybe this dimension could represent retail spending.</p>
+<p>The second dimension would represent that we have some customers who purchase a lot of Fresh, Frozen, Delicatessen while other customers purchase very few amounts of Fresh, Frozen, Delicatessen maybe this dimension could represent traditional market spending.</p>
+<p>The third dimension would represent that we have some customers who purchase a lot of Delicatessen, Fresh, while other customers purchase very few amounts of Delicatessen, Fresh, maybe this dimension could represent delicatessen store spending.</p>
+<p>The fourth dimension would represent that we have some customers who purchase a lot of Frozen, Delicatessen while other customers purchase very few amounts of Frozen, Delicatessen, maybe this dimension could represent frozen food store spending.</p>
 <p>And based on my analysis in the question 2, I think the top 3 important features to consider relevance are Fresh, Frozen, Delicatessen, the other three features Milk, Grocery, Detergents_Paper are easy to predict by other features relative to the other threee features. so I think the first four dimensions is the best representation in terms of customer spending.</p>
 
 </div>
@@ -24762,8 +24762,13 @@ For Sample 0, the values for 'Milk' is above average and resemble the Cluster 1 
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<p>Since the expiry date of the fresh commodity usually is seven to fourteen days, I think the customer of segment 0 is most affected.
-Our hypothesis is that customer of segment 0 is most affected, so if we run A/B tests on this, I think the control group would be the customer of segment 1 with original service, and the test group would be the customer of segment 0 with new service. Compare their result and we can determine our hypothesis is right or wrong.</p>
+<p>Since the expiry date of the fresh commodity usually is seven to fourteen days, I think the customer of segment 0 is most affected.</p>
+<p>My hypothesis is that customer of segment 0 is the most affected, so if we run A/B tests on this, I think should do twice A/B test</p>
+<p>The first A/B test, the control group is the customers of segment 1 and the original delivery service, and the test group is the customers of segment 1 and the new delivery service.</p>
+<p>The second A/B test, the control group is the customers of segment 0 and the original delivery service, and the test group is the customers of segment 0 and the new delivery service.</p>
+<p>I expected in first A/B test, the control group, and the test group, their response should be similar.
+And in the second A/B test, the control group, and the test group, their response should be quite different.
+Based on these two A/B test I think I can determine my hypothesis is right or wrong.</p>
 
 </div>
 </div>
